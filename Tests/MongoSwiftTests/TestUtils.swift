@@ -56,6 +56,9 @@ class MongoSwiftTestCase: XCTestCase {
         }
         return name.replacingOccurrences(of: "[ \\+\\$]", with: "_", options: [.regularExpression])
     }
+
+    // dummy test case so `--generate-linuxmain` doesn't complain.
+    func test1() {}
 }
 
 extension MongoClient {
